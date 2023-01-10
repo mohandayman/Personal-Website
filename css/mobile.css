@@ -1,0 +1,147 @@
+/*navbar*/
+.l-heading{
+    font-size: 2rem;
+    line-height: 1.2;
+}
+.lead{
+    font-size: 1rem;
+    line-height: 1.2;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar .links {
+    position: relative;
+}
+
+        
+#navbar{
+    padding: 20px;
+}
+
+#navbar .links{
+    position: relative;
+
+}
+#navbar .links ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    background-color: #eee;
+    min-width: 200px;
+    top: calc(100% + 15px);
+    display: none;
+    transition: 0.3s;
+
+}
+#navbar .links:hover ul {
+    display: block;
+
+}
+#navbar .links ul::before{
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #eee transparent;
+    position: absolute;
+    top: -20px;
+    right: 5px;
+}
+#navbar .links ul li a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+#navbar .links ul li a:hover{
+    padding-left: 25px;
+}
+#navbar .links  ul li:not(:last-child){
+    border-bottom: 1px solid #DDD;
+}
+#navbar .links .icon:hover span:nth-child(2){
+    width: 100%;
+}
+#navbar .links .icon{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+}
+#navbar .links  .icon span{
+    background-color: #FFF;
+    margin-bottom: 5px;
+    height: 3px;
+}
+
+#navbar .links  .icon span:first-child{
+    width: 100%;
+}
+#navbar .links  .icon span:nth-child(2) {
+    width: 50%;
+ 
+    transition: 0.3s;
+} 
+#navbar .links  .icon span:last-child{
+    
+    width: 100%;
+}
+
+
+
+.logo{
+    width: 50px;
+}
+
+
+
+
+
+
+
+
+/* end navbar */
+#about .about-content{
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+#about .about-content ul{
+    list-style: none;
+}
+
+#about .about-content img{
+width: 100%;
+margin: 1rem 0 0 0;}
+#about .about-content div{
+    padding-bottom: 1rem;
+}
+
+    #navbar{
+    flex-direction: row;
+    padding-bottom: 1.5rem;
+}
+#navbar .logo{
+    margin: 0.5rem;
+}
+#programs .boxes{
+    display: block;
+}
+#websites .websites-boxes{
+    display: block;
+}
+#contact {
+    flex-direction: column;
+}
+@media (max-width: 500px){
+  
+    #navbar ul li{
+        padding: 1rem;
+    }
+}
